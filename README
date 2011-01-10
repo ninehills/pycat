@@ -22,6 +22,8 @@ pycat 用于登录南开大学网关计费系统
   * 202.113.18.188 南开大学网关1，西区经过该网关
   * 202.113.18.180 南开大学网关2，五教经过该网关
   * 请使用者根据自己在浏览器中的网关地址来决定该使用哪个网关。
+
+  
 使用方法(Linux)
 --------
 一、 安装
@@ -62,6 +64,3 @@ TODO
  * 系统托盘显示
  * 开机自动启动
  * ipv6支持
-
-This file was modified by PyCharm 1.1 for binding GitHub repository
-This file was modified by PyCharm 1.1 for binding GitHub repository
