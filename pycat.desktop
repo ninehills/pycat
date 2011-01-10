@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Pycat
+Name[zh_CN]=Pycat 客户端
+Comment=Pycat for Nankai University network
+Comment[zh_CN]=南开大学计费网关登录工具
+Exec=pycatgui
+Terminal=false
+Type=Application
+Icon=/usr/share/pycat/data/pycat.png
+Categories=Application;Network;

@@ -1,0 +1,67 @@
+pycat 用于登录南开大学网关计费系统
+==================================
+
+项目起源
+--------
+本系统来自于BJTU的[ideal](http://dev.bjtu.edu.cn/ideal/)，原本为北交的网关登录系统设计。
+
+本人[cynic](mailto:swulling@gmail.com)对其进行了修改，使其可以应用于南开的计费系统。
+
+系统要求
+--------
+ * 命令行版本`pycat.py`: Python 2.4以上版本
+ * GUI版本`pycatgui.py`: Python 2.x + PyGTK
+
+使用方法（Windows）
+-------------------
+ * 下载Python和PyGTK，安装。
+ * 命令行界面：cmd下进入pycat目录，运行`python pycat.py --help` 查看使用方法
+ * 图形界面：双击`pycatgui.py`运行GUI程序。
+ * 注意事项：
+  * 本程序支持两个网关：
+  * 202.113.18.188 南开大学网关1，西区经过该网关
+  * 202.113.18.180 南开大学网关2，五教经过该网关
+  * 请使用者根据自己在浏览器中的网关地址来决定该使用哪个网关。
+使用方法(Linux)
+--------
+一、 安装
+
+下载源码包并解压至系统某处，遂解压之(当然，如果未解压，您应该看不到这些).
+
+并在此目录下运行`make install`。需要root权限。
+
+目前将程序放在`/usr/share/pycat`下，在`/usr/bin`下有其软链接。
+
+二、卸载
+
+在源码目录下，运行`make uninstall`即可。
+
+或者手动删除上文提到的文件以及主目录下的配置文件目录`.pycat`。
+
+三、使用
+
+图形程序可以从 `应用程序->互联网->Pycat 客户端` 启动。状态栏有提示当前的连接状态。
+
+首次使用请运行`pycatconf`设置账号信息。
+
+使用`pycatconf --help`获取帮助信息。
+
+设置完成后可以使用`pycat`来登录或注销。
+
+
+    登录： pycat on
+    注销： pycat off
+    状态： pycat status
+    使用pycat 或者pycat --help获取帮助信息。
+
+
+TODO
+----
+
+ * Windows下的打包
+ * 系统托盘显示
+ * 开机自动启动
+ * ipv6支持
+
+This file was modified by PyCharm 1.1 for binding GitHub repository
+This file was modified by PyCharm 1.1 for binding GitHub repository
